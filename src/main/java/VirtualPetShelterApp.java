@@ -86,7 +86,7 @@ public class VirtualPetShelterApp {
 				currentPups();
 
 			} else if (choice.equals("5")) { // admit a dog
-				System.out.println("We're happy to shelter your pup.  What is your pup's name?\n");
+				System.out.println("We're happy to shelter your pup.  What is your pup's name?");
 				String name = input.nextLine().toLowerCase();
 
 				System.out.println("Can you tell us a little bit about " + name.substring(0, 1).toUpperCase()
@@ -97,12 +97,8 @@ public class VirtualPetShelterApp {
 
 				myDog.addDog(dog5);
 
-				System.out.println("Great!  Our pups now include:");
-				currentPups();
-
-				System.out.println(name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase()
-						+ " has moved into his new home.\n");
-
+				System.out.println(
+						name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase() + " sounds great!\n");
 				currentPups();
 
 			} else {
