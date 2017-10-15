@@ -1,8 +1,5 @@
 import java.util.Scanner;
 
-//import src.main.java.BankAccount;
-//import src.main.java.String;
-
 //app
 public class VirtualPetShelterApp {
 
@@ -14,8 +11,8 @@ public class VirtualPetShelterApp {
 
 		VirtualPet dog1 = new VirtualPet("charlie", "smart, playful, majestic, loving", 5, 5, 70, 10);
 		VirtualPet dog2 = new VirtualPet("angus", "derpy, hyper, loving, loyal", 4, 6, 70, 15);
-		VirtualPet dog3 = new VirtualPet("snoopy", "sassy, sneaky, sarcastic, mischievous", 3, 4, 200, 10);
-		VirtualPet dog4 = new VirtualPet("scooby", "hungry, skittish, playful, happy", 8, 7, 100, 9);
+		VirtualPet dog3 = new VirtualPet("snoopy", "sassy, sneaky, sarcastic, mischievous", 3, 4, 50, 10);
+		VirtualPet dog4 = new VirtualPet("scooby", "hungry, skittish, playful, happy", 8, 7, 120, 9);
 
 		myDog.addDog(dog1);
 		myDog.addDog(dog2);
@@ -34,9 +31,9 @@ public class VirtualPetShelterApp {
 			myDog.dogsTick();
 
 			if (choice.equals("exit")) {
-				System.out.println("Final Health");
+				System.out.println("Final Health:\n");
 				currentHealth();
-				System.out.println("\n\nThanks for playing.  See you next time!");
+				System.out.println("\n\nThanks for visiting.  See you next time!");
 				System.exit(0);
 
 			} else if (choice.equals("1")) { // feed all the dogs
@@ -110,19 +107,16 @@ public class VirtualPetShelterApp {
 
 			} else {
 				System.out.println("Invalid option, try again.\n");
-				// options();
-				// choice = input.nextLine().toLowerCase();
 
 			} // closes final "else"
 
 			System.out.println("\nWhat would you like to do next?\n");
-			// String s2 = input.nextLine();
 
 		} // closes "do"
 
 		while (!choice.equals("exit"));
 
-		System.out.println("Thanks for visiting!");
+		System.out.println("Thanks for visiting, see you next time!");
 		// System.exit(0);
 
 		input.close();
@@ -142,7 +136,7 @@ public class VirtualPetShelterApp {
 					+ current.getName().substring(1).toLowerCase() + "\t|" + current.getHunger() + "\t|"
 					+ current.getThirst() + "\t|" + current.getWeight() + "\t|" + current.getEnergy());
 		}
-	}
+	}// closes currentHealth
 
 	public static void currentPups() {
 		System.out.println("Our current pups are:\n");
@@ -150,6 +144,6 @@ public class VirtualPetShelterApp {
 			System.out.println("[" + current.getName().substring(0, 1).toUpperCase()
 					+ current.getName().substring(1).toLowerCase() + "] " + current.getDescription());
 		}
-	}
+	}// closes currentPups
 
 }// final curly brace
