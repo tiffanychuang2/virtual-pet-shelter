@@ -27,6 +27,16 @@ public class VirtualPet {
 //		this.sleep = sleep;
 	}
 	
+	public VirtualPet (String name, int hunger, int thirst, int weight, int energy) {
+		this.name = name;
+		this.hunger = hunger;
+		this.thirst = thirst;
+		this.weight = weight;
+		this.energy = energy;
+//		this.accident = accident;
+//		this.sleep = sleep;
+	}
+	
 	public VirtualPet (String name, String description, int hunger, int thirst, int weight, int energy) {
 		this.name = name;
 		this.description = description;
@@ -118,14 +128,14 @@ public class VirtualPet {
 	}
 
 	public void feed() {
-		hunger -= 2; // less hungry
+		hunger -= 4; // less hungry
 		weight += 2; // +1 lb.
 		energy += 1; // gain energy
 //		accident += 1; // more likely to have an accident
 	}
 	
 	public void hydrate() {
-		thirst -= 2;
+		thirst -= 4;
 		weight += 1;
 		energy += 2;
 //		accident += 2;
@@ -135,7 +145,7 @@ public class VirtualPet {
 		hunger += 2;
 		thirst += 2;
 		weight -= 2;
-		energy -= 2;
+		energy -= 5;
 //		accident -= 1;
 //		sleep += 2;
 //	}

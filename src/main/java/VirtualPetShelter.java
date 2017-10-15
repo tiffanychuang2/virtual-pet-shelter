@@ -27,8 +27,9 @@ public class VirtualPetShelter {
 	}
 
 //allow intake of a homeless pet/admit a pet
-	public void addDog(VirtualPet dog) {   //does this need to be void?
+	public void addDog(VirtualPet dog) {
 		dogs.put(dog.getName(), dog);
+//		menuItems.put("Bottle of Champagne", 200.00);
 	}
 	
 //tick
@@ -39,14 +40,16 @@ public class VirtualPetShelter {
 	}
 
 //feed all of the pets in the shelter
-	public void feedDogs(VirtualPet dog) {
+//	public void feedDogs(VirtualPet dog) {
+	public void feedDogs() {
 		for (VirtualPet currentDogs: dogs.values()) {
 			currentDogs.feed();
 		}
 	}
 		
 //water all of the pets in the shelter
-	public void hydrateDogs(VirtualPet dog) {
+//	public void hydrateDogs(VirtualPet dog) {
+	public void hydrateDogs() {	
 		for (VirtualPet currentDogs: dogs.values()) {
 			currentDogs.hydrate();
 		}
