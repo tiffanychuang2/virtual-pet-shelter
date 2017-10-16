@@ -1,5 +1,7 @@
 To do:
 
+Check Formatting!
+
 Stretch tasks for myself:
 - add option for when there are no more pets to adopt
 - add option when shelter is full
