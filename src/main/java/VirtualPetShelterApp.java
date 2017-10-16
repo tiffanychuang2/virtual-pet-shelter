@@ -117,7 +117,7 @@ public class VirtualPetShelterApp {
 
 		input.close();
 
-	}
+	}// close main method
 
 	public static void options() {
 		System.out.println("Select 1 to feed all the dogs." + "\nSelect 2 to give water to all the dogs."
